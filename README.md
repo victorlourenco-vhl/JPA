@@ -11,7 +11,9 @@ Anotações sobre a especificação JPA e sua implementação com Hibernate
 - Um objeto EntityManager encapsula uma conexão com a base de dados e serve para efetuar operação de acesso a dados (inserção, remoção, deleção, atualização).
 - **Escopo:** tipicamente mantem-se uma instância única de EntityManager para cada thread do sistema (no caso de aplicações web, para cada requisição do sistema). Ou seja, quando um usuário faz uma requisição a aplicação instancia um único EntityManager para trabalhar com todos os dados daquela requisição.
 
-## EntityManagerFactory
+### EntityManagerFactory
 - Um objeto EntityManagerFactory é utilizado para instanciar objetos EntityManager
 - **Escopo:** tipicamente mantem-se uma instância única de EntityManagerFactory para toda aplicação
 
+## Serializable
+- Habilita que um objeto de uma determinada classe possa ter seu estado persistido pela API padrão do Java
